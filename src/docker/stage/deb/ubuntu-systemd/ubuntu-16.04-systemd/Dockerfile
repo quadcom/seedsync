@@ -4,6 +4,9 @@
 
 FROM ubuntu:16.04
 
+COPY ././docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
 ENV container docker
 
 # Don't start any optional services except for the few we need.
