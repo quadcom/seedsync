@@ -3,7 +3,7 @@
 # https://hub.docker.com/r/solita/ubuntu-systemd/
 FROM ubuntu:20.04
 
-COPY ./docker-entrypoint.sh /
+COPY ././docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 
