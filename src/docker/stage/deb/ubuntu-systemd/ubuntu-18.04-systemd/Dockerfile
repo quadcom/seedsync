@@ -3,6 +3,9 @@
 # https://hub.docker.com/r/solita/ubuntu-systemd/
 FROM ubuntu:18.04
 
+COPY ././docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
 RUN apt-get update && apt-get install -y systemd
 
 ENV container docker
