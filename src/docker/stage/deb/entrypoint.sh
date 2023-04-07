@@ -1,4 +1,6 @@
 #!/bin/bash
+#Set UMASK
+umask 0000
 
 # exit on first error
 set -e
