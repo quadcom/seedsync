@@ -463,7 +463,7 @@ class Lftp:
             "queue",
             "'",
             "pget" if not is_dir else "mirror",
-            "-c",
+            "-c --no-perms",
             "\"{remote_dir}/{filename}\"".format(remote_dir=escape(self.__base_remote_dir_path),
                                                  filename=escape(name)),
             "-o" if not is_dir else "",
